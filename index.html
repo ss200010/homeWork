@@ -3,36 +3,47 @@
 <head>
   <meta charset="UTF-8" />
   <title>Главная</title>
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
   <header>
-  	<img src="webLogo.png" height="70" width="130" alt="Логотип" />
-    <h1>Основы Web-технологий</h1>
-    <nav>
-			<ul>
-				<li><a href="#">Главная</a></li>
-				<li><a href="web.html">Web-технологии</a>
-					<ul>
-						<li><a href="html5.html">HTML5</a></li>
-						<li><a href="css.html">CSS3</a></li>
-						<li><a href="js.html">Javascript</a></li>
+  	<div class="container">
+			<img class="webLogo" src="webLogo.png" height="70" width="130" alt="Логотип" />
+			<h1>Основы Web-технологий</h1>
+			<nav>
+				<div class="navigation">
+					<ul class="menu">
+						<li><a href="#">Главная</a></li>
+						<li class="submenu">
+							<a href="web.html">Web-технологии</a>
+							<ul>
+								<li><a href="html5.html">HTML5</a></li>
+								<li><a href="css.html">CSS3</a></li>
+								<li><a href="js.html">Javascript</a></li>
+							</ul>
+						</li>
+						<li><a href="calc.html">Калькулятор</a></li>
+						<li><a href="test.html">Тест</a></li>
 					</ul>
-				</li>
-				<li><a href="calc.html">Калькулятор</a></li>
-				<li><a href="test.html">Тест</a></li>
-  		</ul>
-  	</nav>
-  </header>
+				</div>
+			</nav>
+		</div>
+  </header>	
   <main>
-  	<p>
-				Курс предназначен для <em>широкого</em> круга слушателей, которые хотели бы освоить такие <em>Web-технологии</em> как <strong><abbr title="HyperText Markup Language">HTML5</abbr>,<abbr title="Cascading Style Sheets">CSS3</abbr>, JavaScript</strong>, но не имеют предварительных профильных знаний в этой области. <em>Предварительные знания/навыки:</em> уверенное пользование ПК и программным обеспечением. Практическая работа будет проводится с использованием текстового редактора Notepad++.
-  	</p>
-  </main>
+  	<div class="container">
+			<p>
+					Курс предназначен для <em>широкого</em> круга слушателей, которые хотели бы освоить такие <em>Web-технологии</em> как <strong><abbr title="HyperText Markup Language">HTML5</abbr>,<abbr title="Cascading Style Sheets">CSS3</abbr>, JavaScript</strong>, но не имеют предварительных профильных знаний в этой области. <em>Предварительные знания/навыки:</em> уверенное пользование ПК и программным обеспечением. Практическая работа будет проводится с использованием текстового редактора Notepad++.
+			</p>
+		</div>
+	</main>	
   <footer>
-  	<address>
-  		<a href="#">Пишите:mail@mail</a>
-  	</address>
-  	<p>&copy;	 Фамилия И.О., год</p>
-  </footer>
+  	<div class="container">
+			<address>
+				<a href="#">Пишите:mail@mail</a>
+			</address>
+			<p>&copy;	 Фамилия И.О., год</p>
+		</div>
+	</footer>	
 </body>
 </html>

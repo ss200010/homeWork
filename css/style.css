@@ -1,0 +1,171 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color: gray;
+	font-size: 16px;
+}
+abbr[title] {
+    border-bottom: none;
+    text-decoration: none;
+}
+
+p, ul, li {
+	margin: 0;
+	padding: 0;
+}
+
+ p {
+	text-align: justify;
+	
+}
+
+a {
+	font-size: 14px;
+}
+
+.container {
+	background-color: white;
+	margin: 0 auto;
+	padding: 5px;
+	margin-top:-1px;
+	width: 805px;
+	border-radius:10px;
+}
+
+/*стили для футера*/
+
+.webLogo {
+	float: left;
+	border-radius:5px;
+	padding: 10px;
+	
+}
+
+header h1 {
+	padding: 10px 10px 10px 30px;
+	display: inline-block;
+}
+
+.navigation {
+	clear: left;
+	padding-left: 180px;
+	padding-bottom: 10px;
+}
+
+.menu >  li {
+	display: inline-block;
+} 
+
+.submenu {
+	position: relative;
+}
+
+.submenu ul {
+	display: none;
+	list-style-type: none;
+	position: absolute;
+	left: 10px;
+	background-color: white;
+	border: 1px solid black;
+	border-radius:5px;
+	padding: 5px;
+	
+}
+
+ .submenu:hover  ul {
+	display: block;
+	
+}
+
+/*стили для main*/
+
+
+
+/*стили для footer*/
+
+ footer .container p,
+ footer .container address {
+	text-align: center;
+}
+
+/*стили для страницы web*/
+
+.webTech li {
+	margin-left: 40px;
+}
+
+dl {
+	margin: 0;
+	padding: 0;
+}
+
+/*стили для страницы html5*/
+h2 {
+	padding: 0 0 10px 0;
+	margin: 0;
+}
+
+.aside {
+	float:right;
+	margin: 5px;
+	padding:5px;
+	background-color: darkgrey;
+	width: 24%;
+	font-size:12px;
+	border-radius:10px;
+}
+.aside h4 {
+	font-size:14px;
+	margin: 0;
+	padding: 15px 40px 10px 0;
+}
+
+section h4 {
+	margin:10px 0;
+	font-size:20px;
+}
+
+/*стили для страницы CSS*/
+
+.calc {
+	margin :0 auto;
+	width: auto;
+}
+
+.calc input {
+	width:220px;
+}
+
+td {
+	margin: 0;
+	width: 35px;
+	height: 25px;
+}
+
+button {
+	width: 100%;
+
+
+}
+td.equals {
+	margin: 0;
+
+	height: 52px;
+}
+.equals button{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+/*стили для страницы test*/
+
+#test label {
+	padding-left: 10px;
+}
+
+#test #result {
+	padding: 0;
+	width: 10%;
+	text-align: center;
+}
