@@ -297,10 +297,10 @@ select { /* 1 */
  */
 
 button,
-html [type="button"], /* 1 */
+html [type="button"],   1 * / 
 [type="reset"],
 [type="submit"] {
-  -webkit-appearance: button; /* 2 */
+  -webkit-appearance: button; /* 2 
 }
 
 /**
@@ -325,7 +325,6 @@ button:-moz-focusring,
 [type="submit"]:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
-
 /**
  * Change the border, margin, and padding in all browsers (opinionated).
  */
@@ -412,6 +411,7 @@ textarea {
  * 1. Correct the inability to style clickable types in iOS and Safari.
  * 2. Change font properties to `inherit` in Safari.
  */
+
 
 ::-webkit-file-upload-button {
   -webkit-appearance: button; /* 1 */
