@@ -144,7 +144,11 @@ section h4 {
 
 .calc input {
 	width:220px;
+	text-align: end;
 }
+
+	
+
 
 table {
 	/*border-collapse: collapse;*/
