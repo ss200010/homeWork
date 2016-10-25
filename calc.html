@@ -35,33 +35,33 @@
 			<form action="#" id="calc" name="calc" >
 				<table class="calc">
 					<tr>
-						<td colspan="5" class="result"><input name="result" type="text"></td>
+						<td colspan="5" class="result"><input name="result" type="text" value=""></td>
 						</tr>
 					<tr>
-						<td><button type="button" name="button7">7</button></td>
-						<td><button type="button" name="button8">8</button></td>
-						<td><button type="button" name="button9">9</button></td>
-						<td><button type="button" name="buttonSlash">/</button></td>
-						<td><button type="button">C</button></td>
+						<td><button type="button" name="button7" class="number">7</button></td>
+						<td><button type="button" name="button8" class="number">8</button></td>
+						<td><button type="button" name="button9" class="number">9</button></td>
+						<td><button type="button" name="buttonSlash" class="operation">/</button></td>
+						<td><button type="button" name="reset" class="reset">C</button></td>
 					</tr>
 					<tr>
-						<td><button type="button" name="button4">4</button></td>
-						<td><button type="button" name="button5">5</button></td>
-						<td><button type="button" name="button6">6</button></td>
-						<td><button type="button" name="asteriks">*</button></td>
-						<td><button type="button" name="plusMin">&plusmn;</button></td>
+						<td><button type="button" name="button4" class="number" >4</button></td>
+						<td><button type="button" name="button5" class="number">5</button></td>
+						<td><button type="button" name="button6" class="number">6</button></td>
+						<td><button type="button" name="asteriks" class="operation">*</button></td>
+						<td><button type="button" name="plusMin" class="plusMin">&plusmn;</button></td>
 					</tr>
 					<tr>
-						<td><button type="button" name="button1">1</button></td>
-						<td><button type="button" name="button2">2</button></td>
-						<td><button type="button" name="button3">3</button></td>
-						<td><button type="button" name="min">-</button></td>
-						<td rowspan="2" class="equals"><button type="button" name="equals">=</button></td>
+						<td><button type="button" name="button1" class="number">1</button></td>
+						<td><button type="button" name="button2" class="number">2</button></td>
+						<td><button type="button" name="button3" class="number">3</button></td>
+						<td><button type="button" name="min" class="operation">-</button></td>
+						<td rowspan="2" class="equals"><button type="button" name="equals" class="equal">=</button></td>
 					</tr>
 					<tr>
-						<td colspan="2"><button type="button" name="button0">0</button></td>
-						<td><button type="button" name="dot">.</button></td>
-						<td><button type="button" name="plus">+</button></td>
+						<td colspan="2"><button type="button" name="button0" class="number">0</button></td>
+						<td><button type="button" name="dot" class="number">.</button></td>
+						<td><button type="button" name="plus" class="operation">+</button></td>
 
 					</tr>
 				</table>
@@ -76,5 +76,6 @@
 			<p>&copy;	 Фамилия И.О., год</p>
 		</div>
   </footer>
+  <script src="js/calc.js"></script>
 </body>
 </html>
