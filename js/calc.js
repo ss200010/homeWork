@@ -39,12 +39,14 @@ function makeOperation(target){
 	if(target.name == "min" && !numberOne){
 		input.value += target.textContent;
 		numberOne = +input.value;
+		
 	}
 }
 
 function changeSign(target){
 	input.value = +(input.value) * -1; 
 	numberOne = input.value;
+	
 }
 	
 function showResult(target){
