@@ -44,8 +44,12 @@ function makeOperation(target){
 }
 
 function changeSign(target){
-	input.value = +(input.value) * -1; 
-	numberOne = input.value;
+	if(input.value){
+		input.value = +(input.value) * -1; 
+		numberOne = input.value;
+	}else{
+		
+	}
 	
 }
 	
