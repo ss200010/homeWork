@@ -1,5 +1,4 @@
 var formTest = document.forms.test;
-var finalResultTest = 0;
 var buttonResult  = document.querySelector('button[name="result"]');
 var radio1 = formTest.elements.question1;
 var radio2 = formTest.elements.question2;
@@ -7,10 +6,12 @@ var radio3 = formTest.elements.question3;
 var check1 = formTest.elements.question4;
 var check2 = formTest.elements.question5;
 var phrase = "Ваш результат -";
-var ending = "балл";
-var percent = 0;
+
 		
 buttonResult.onclick = function() {
+	var finalResultTest = 0;
+	var ending = "балл";
+	var percent = 0;
   if(radio1[0].checked){
   	finalResultTest += 1;  	
   }
@@ -38,7 +39,9 @@ buttonResult.onclick = function() {
   }
 
 percent = (finalResultTest/5)*100;
-alert(phrase +" "+finalResultTest +" "+ ending +" или "+ percent+"%");	
+alert(phrase +" "+finalResultTest +" "+ ending +" или "+ percent+"%");
+finalResultTest = 0;
+ending = "";
 	
 };		
 		

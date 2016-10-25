@@ -33,6 +33,7 @@ function makeOperation(target){
 		input.value = "";
 	}else{
 		operation = target.textContent;
+		input.value = "";
 	}
 
 	if(target.name == "min" && !numberOne){
