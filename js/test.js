@@ -1,34 +1,33 @@
-var formTest = document.forms.test;
-var buttonResult  = document.querySelector('button[name="result"]');
-var radio1 = formTest.elements.question1;
-var radio2 = formTest.elements.question2;
-var radio3 = formTest.elements.question3;
-var check1 = formTest.elements.question4;
-var check2 = formTest.elements.question5;
+//var formTest = document.forms.test;
+var buttonResult  = $('button[name="result"]');
+var radio1 = $('input[name="question1"]');
+var radio2 = $('input[name="question2"]');
+var radio3 = $('input[name="question3"]');
+var check1 = $('input[name="question4"]');
+var check2 = $('input[name="question5"]');
 var phrase = "Ваш результат -";
 
+	$("#test").on("click","button", function(){
+		var finalResultTest = 0;
+		var ending = "балл";
+		var percent = 0;
 		
-buttonResult.onclick = function() {
-	var finalResultTest = 0;
-	var ending = "балл";
-	var percent = 0;
-  if(radio1[0].checked){
-  	finalResultTest += 1;  	
-  }
-  if(radio2[2].checked){
-  	finalResultTest += 1;  	
-  }
-  if(radio3[3].checked){
-  	finalResultTest += 1;  	
-  }
-  if( !(check1[0].checked || check1[3].checked) && (check1[1].checked && check1[2].checked)) {
-  	finalResultTest += 1;
-  }
-
-  if( !(check2[2].checked || check2[3].checked) && (check2[0].checked && check2[1].checked)) {
-  	finalResultTest += 1;
-  }
-
+		if($(radio1).eq(0).prop("checked")){
+  		finalResultTest += 1;  	
+  	}
+		if(radio2.eq(2).prop("checked")){
+  		finalResultTest += 1;  	
+  	}
+		if(radio3.eq(3).prop("checked")){
+  		finalResultTest += 1;  	
+  	}
+		if( !(check1.eq(0).prop("checked") || check1.eq(3).prop("checked")) && (check1.eq(1).prop("checked") && check1.eq(2).prop("checked"))) {
+  		finalResultTest += 1;
+  	}
+		if( !(check2.eq(2).prop("checked") || check2.eq(3).prop("checked")) && (check2.eq(0).prop("checked") && check2.eq(1).prop("checked"))) {
+  		finalResultTest += 1;
+  	}
+	
   switch(finalResultTest){
   	case 0:ending += "ов"; break;
   	case 1:break;
@@ -43,8 +42,7 @@ alert(phrase +" "+finalResultTest +" "+ ending +" или "+ percent+"%");
 finalResultTest = 0;
 ending = "";
 	
-};		
-		
+});
 		
 
 
