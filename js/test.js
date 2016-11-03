@@ -1,4 +1,3 @@
-//var formTest = document.forms.test;
 var buttonResult  = $('button[name="result"]');
 var radio1 = $('input[name="question1"]');
 var radio2 = $('input[name="question2"]');
